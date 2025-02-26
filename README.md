@@ -7,7 +7,14 @@ This application is built to aid 3 department of the healthcare domain - Patient
 <img width="838" alt="Screenshot 2025-02-26 at 9 34 15 PM" src="https://github.com/user-attachments/assets/d56f4df4-ab5b-4d38-8c71-c676fecd1361" />
 
 ## Prototype 
+#### Pharmacist Interface
+![AADHAR (2)](https://github.com/user-attachments/assets/3a86ba1a-bf15-493e-bc6c-4eb5c97f24a3)
 
+#### Patient Interface
+![AADHAR (3)](https://github.com/user-attachments/assets/5d045b2f-b327-4b9f-a5fa-c9762e7598d6)
+
+#### Doctor Interface
+![AADHAR (4)](https://github.com/user-attachments/assets/5864a107-a7d1-4265-9f4c-8857e39202bc)
 
 ## Features for the Patient:
 - Patient can upload their blood reports (images/pdf) on to the portal. OCR is perfomed on the report using a custom library **PaddleOCRX** built on top of [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
@@ -117,7 +124,6 @@ nodemon server.js
 ```
 
 In the ```.env``` file, add your MONGODB_URI
-
 ```
 cd model
 pip install -r requirements.txt
@@ -141,3 +147,4 @@ I attempted to implement medical captioning using generative transformers as des
 ](https://arxiv.org/abs/2209.13983) This paper introduces a novel approach for automatic clinical caption generation from chest X-ray images. The method combines two language models: **Show-Attend-Tell (SAT) and GPT-3**, to generate structured radiology reports. The SAT model extracts visual features and provides attention-based localization of pathologies, while GPT-3 refines and extends the generated text into a more comprehensive and clinically meaningful report. However, due to hardware and dataset limitations, I wasn’t able to achieve the expected performance. Despite these challenges, I found the approach extremely compelling, and my long-term goal is to fully implement and extend this model to a wider variety of medical images and scans.
 
 ## Demo Video
+Coming Soon...
