@@ -32,7 +32,7 @@ os.makedirs(RESULTS_FOLDER, exist_ok=True)
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-pro")
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDMVfdxGrHjPujivyhXMveaWs7oEr0UIyE"
+os.environ["GOOGLE_API_KEY"] = "GOOGLE_API_KEY"
 
 agent = Agent(
         model=Gemini(
